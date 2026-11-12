@@ -16,7 +16,7 @@ git switch -c develop            # master는 깨끗한 템플릿으로 둔다. �
 scripts/init.sh --name "My App" --dir ../my-app     # 어떤 스택이든 가능. 프리셋은 선택 (--preset <이름>)
 scripts/start.sh                 # tmux 세션에서 claude 실행
 ```
-프리셋 없이도 `pm`, `developer`, `reviewer-qa`로 시작할 수 있다. 스택별 전문 직원과 허용 명령이 필요하면 `presets/`를 참고한다 (현재: electron, web).
+메인 세션은 COO로서 CEO(사용자)와만 대화하고 CTO, CFO, PM, 개발자, QA에게 업무를 배정한다 (`company/org.md`). 프리셋 없이도 이 기본 조직으로 시작할 수 있다. 스택별 전문 직원과 허용 명령이 필요하면 `presets/`를 참고한다 (현재: electron, web).
 코어의 허용 명령은 git/gh 등 공통 명령뿐이다. 빌드·테스트 명령은 프리셋의 `allow`가 추가하거나 `.claude/settings.json`에 직접 넣는다.
 1. `company/mission.md`, `company/architecture.md`를 채운다.
 2. PM에게 티켓 분해를 시키거나 `company/tickets/backlog/`에 티켓을 직접 쓴다.
@@ -25,8 +25,8 @@ scripts/start.sh                 # tmux 세션에서 claude 실행
 ## 구조
 ```
 CLAUDE.md          매니저 규칙 (메인 세션이 읽음)
-.claude/           settings, loop, agents(pm, developer, reviewer-qa), rules
-company/           project.md, mission, architecture, tickets, decisions, reports, templates
+.claude/           settings, loop, agents(cto, cfo, pm, developer, reviewer-qa), rules
+company/           project.md, org(조직도), mission, architecture, finance, tickets, decisions, reports, templates
 presets/           선택형 스택별 직원/규칙/허용 명령 (현재 electron, web. 새 프리셋 추가 가능)
 scripts/           init.sh, start.sh, dev.sh
 ```

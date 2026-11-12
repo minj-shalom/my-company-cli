@@ -2,6 +2,7 @@
 
 - **상태:** backlog | in-progress | done
 - **담당:** .claude/agents/ 에 있는 직원 이름 (예: developer, reviewer-qa, 프리셋의 전문 직원)
+- **부서:** company/org.md의 부서 (예: 개발팀)
 - **브랜치:** feature/T-000
 - **의존:** 없음 (또는 T-번호)
 
