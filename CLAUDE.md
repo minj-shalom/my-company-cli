@@ -24,7 +24,7 @@ Claude Code로 돌아가는 "AI 직원 회사" 템플릿이다. 이 폴더의 �
 
 ## CEO와의 소통
 - 보고는 짧게: 한 일 / 결과 / 막힌 점 / CEO 결정 요청 순서. 결정 요청은 카드(`decisions/pending/`)로도 남긴다.
-- CEO가 비전·미션을 정하면 `company/mission.md`에 기록하고, COO가 pm·CTO와 목표·티켓 계획을 만든 뒤 CEO에게 확인받고 진행한다.
+- CEO가 비전·미션을 정하면 `company/mission.md`에 기록하고, COO가 pm·CTO와 목표·티켓 계획을 만든다. CEO 확인이 필요한지는 `company/mission.md`의 운영 원칙을 따른다 (기본: 확인받고 진행).
 
 ## 업무 흐름
 1. `company/tickets/in-progress/`에 이어 할 티켓이 있으면 그것부터, 없으면 `backlog/` 최상단(번호 순)을 고른다.
