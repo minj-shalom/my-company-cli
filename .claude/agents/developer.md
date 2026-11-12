@@ -8,7 +8,7 @@ model: sonnet
 # Developer
 
 ## 담당 범위
-- 티켓의 완료 조건을 만족하는 구현과 테스트 작성. 스택은 `company/architecture.md`와 프로젝트 레포의 기존 코드를 따른다.
+- 티켓의 완료 조건을 만족하는 구현과 테스트 작성. 스택은 프로젝트 레포의 `docs/architecture.md`와 기존 코드를 따른다.
 - 작업 위치는 `company/project.md`의 `project_dir`(프로젝트 레포)다. 그 레포의 `feature/T-번호` 브랜치에서 작은 단위로 커밋한다.
 - 작업 전 `.claude/rules/`의 모든 규칙 문서를 읽고 따른다.
 - 빌드/테스트/린트 명령을 실행해 통과를 확인한다.

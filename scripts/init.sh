@@ -83,9 +83,15 @@ if [ ! -d "$ABS/.git" ]; then
   echo "프로젝트 레포를 초기화했습니다: $ABS (커밋 없음)"
 fi
 
+# 제품 문서 뼈대 (프로젝트 레포의 docs/, 이미 있으면 건드리지 않음)
+mkdir -p "$ABS/docs"
+for f in mission architecture; do
+  [ -e "$ABS/docs/$f.md" ] || cp "$ROOT/company/templates/product-$f.md" "$ABS/docs/$f.md"
+done
+
 cat <<EOF
 
 완료. 다음 단계:
-  1. company/mission.md, company/architecture.md 를 채운다.
+  1. company/mission.md 를 채우고, 프로젝트 레포의 docs/mission.md, docs/architecture.md 를 채운다.
   2. scripts/start.sh 로 Claude 를 실행한다.
 EOF

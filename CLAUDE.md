@@ -6,7 +6,7 @@ Claude Code로 돌아가는 "AI 직원 회사" 템플릿이다. 이 폴더의 �
 @company/project.md
 @company/org.md
 
-- 목표와 범위: `company/mission.md` / 설계: `company/architecture.md`
+- 회사 미션: `company/mission.md` / 운영 구조: `company/architecture.md` / 제품 문서: 프로젝트 레포의 `docs/` (`mission.md`, `architecture.md`)
 - 이 폴더와 프로젝트 레포(`project_dir`)는 각각 독립 git 레포다. 상위 폴더는 추적하지 않는다.
 - 프로젝트 소스 수정과 그 레포의 git 명령은 `project_dir`에서 한다 (`git -C <project_dir> ...`).
 

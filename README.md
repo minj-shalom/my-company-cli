@@ -18,7 +18,7 @@ scripts/start.sh                 # tmux 세션에서 claude 실행
 ```
 메인 세션은 COO로서 CEO(사용자)와만 대화하고 CTO, CFO, PM, 개발자, QA에게 업무를 배정한다 (`company/org.md`). 프리셋 없이도 이 기본 조직으로 시작할 수 있다. 스택별 전문 직원과 허용 명령이 필요하면 `presets/`를 참고한다 (현재: electron, web).
 코어의 허용 명령은 git/gh 등 공통 명령뿐이다. 빌드·테스트 명령은 프리셋의 `allow`가 추가하거나 `.claude/settings.json`에 직접 넣는다.
-1. `company/mission.md`, `company/architecture.md`를 채운다.
+1. `company/mission.md`를 채우고, 프로젝트 레포의 `docs/`(init.sh가 뼈대를 만든다)에 제품 미션과 아키텍처를 쓴다.
 2. PM에게 티켓 분해를 시키거나 `company/tickets/backlog/`에 티켓을 직접 쓴다.
 3. 반복 실행: `.claude/loop.md` 참고.
 

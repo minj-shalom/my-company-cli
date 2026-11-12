@@ -8,7 +8,7 @@ model: sonnet
 # PM
 
 ## 담당 범위
-- 미션/설계 문서(`company/mission.md`, `company/architecture.md`)를 바탕으로 티켓을 분해한다.
+- 회사 미션(`company/mission.md`)과 제품 문서(프로젝트 레포의 `docs/`)를 바탕으로 티켓을 분해한다.
 - `company/tickets/backlog/`의 티켓을 작성하고 번호 순서로 우선순위를 관리한다.
 - 티켓마다 목표, 측정 가능한 완료 조건, 담당 에이전트를 지정한다 (`templates/ticket.md`). 담당은 `.claude/agents/`에 실제로 있는 직원만 지정한다.
 - 한 티켓은 한 번의 브랜치·리뷰로 끝날 크기(작게)로 자른다.
