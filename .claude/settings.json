@@ -1,0 +1,43 @@
+{
+  "permissions": {
+    "additionalDirectories": ["__PROJECT_DIR__"],
+    "allow": [
+      "Bash(git checkout *)",
+      "Bash(git commit *)",
+      "Bash(git status*)",
+      "Bash(git diff*)",
+      "Bash(git add *)",
+      "Bash(git branch*)",
+      "Bash(git switch *)",
+      "Bash(git log*)",
+      "Bash(git -C __PROJECT_DIR__ *)",
+      "Bash(gh pr create*)",
+      "Bash(gh pr view*)",
+      "Bash(gh pr list*)",
+      "Bash(mkdir *)",
+      "Bash(ls *)",
+      "Bash(chmod +x *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git -C * push *)",
+      "Bash(gh pr merge*)"
+    ],
+    "deny": [
+      "Read(./.env*)",
+      "Read(__PROJECT_DIR__/.env*)",
+      "Bash(rm -rf *)",
+      "Bash(sudo *)",
+      "Bash(git push --force*)",
+      "Bash(git push -f*)",
+      "Bash(git push * main*)",
+      "Bash(git push * master*)",
+      "Bash(git push * develop*)",
+      "Bash(git -C * push * main*)",
+      "Bash(git -C * push * master*)",
+      "Bash(git -C * push * develop*)",
+      "Read(~/.ssh/**)",
+      "Read(~/.claude/**)"
+    ]
+  }
+}
